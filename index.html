@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Comércio Exterior</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.1/dist/gsap.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Simulador de Comércio Exterior</h1>
+            <p>Simule os custos e impostos de importação e exportação de produtos.</p>
+        </header>
+
+        <form id="comercioForm" class="form">
+            <div class="input-group">
+                <label for="valorProduto">Valor do Produto (R$):</label>
+                <input type="number" id="valorProduto" required>
+            </div>
+
+            <div class="input-group">
+                <label for="impostoImportacao">Imposto de Importação (%):</label>
+                <input type="number" id="impostoImportacao" required>
+            </div>
+
+            <div class="input-group">
+                <label for="frete">Custo do Frete (R$):</label>
+                <input type="number" id="frete" required>
+            </div>
+
+            <div class="input-group">
+                <label for="outrosCustos">Outros Custos (R$):</label>
+                <input type="number" id="outrosCustos" required>
+            </div>
+
+            <button type="submit">Simular</button>
+        </form>
+
+        <div id="resultado" class="resultado">
+            <h3>Resultado da Simulação:</h3>
+            <p id="valorTotal">Aguardando simulação...</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Simulador de Comércio Exterior</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
